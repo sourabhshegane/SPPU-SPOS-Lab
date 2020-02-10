@@ -18,7 +18,6 @@ import providers.MacroDefinationTable;
 import providers.MacroNameTable;
 
 public class MacroProcessor {
-	private String FILE_NAME = "input.txt";
 	private BufferedReader bufferedReader = null;
 	private ArrayList<MacroNameTable> macroNameTableList = new ArrayList<MacroNameTable>();
 	private ArrayList<KeywordParameterNameTable> keywordParameterTable = new ArrayList<KeywordParameterNameTable>();
@@ -33,7 +32,7 @@ public class MacroProcessor {
 			String line = "DEFAULT";
 			parameterNameTable = new HashMap<String, Integer>();
 			int lineCounter = 0, macroDefinationTablePointer = 1, macroNameTablePointer = 1, keywordParameterNameTablePointer = 0, positionalParameterCounter = 0, keywordParametersCounter = 0;
-			bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(FILE_NAME)));
+			bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
 			while((line = bufferedReader.readLine()) != null) {
 				String []arr = line.split("\t");
 				if(line.contains("START")){
