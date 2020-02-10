@@ -1,5 +1,5 @@
 # SPPU-SPOS-Lab
-SPOS Lab Programs
+SPPU SPOS Lab Programs for TE Computer Sem II of 2015 Pattern
 
 # Contents
-1. MACRO Pass 1 (No error handling, no nested calls)
+1. MACRO Pass 1 (does not handle errors and nested calls)
