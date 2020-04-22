@@ -4,14 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class FCFS {
-
-	private Scanner sc;
+public class FIFO {
 
 	public void performFIFOReplacement(int numberOfFrames, int pages[])
 	{
-		sc = new Scanner(System.in);
-		 System.out.println("Enter Number of Pages:");
 		 int numPages=pages.length;
 		 
 		 HashSet<Integer> frames=new HashSet<>(numberOfFrames);
