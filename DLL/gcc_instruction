@@ -1,0 +1,2 @@
+gcc -o libExampleDLL.so -shared -fPIE -I /usr/lib/jvm/java-11-openjdk-amd64/include/linux/ -I /usr/lib/jvm/java-11-openjdk-amd64/include ExampleDLL.c
+
